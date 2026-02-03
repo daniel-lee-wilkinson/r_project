@@ -11,7 +11,7 @@ library(forcats)
 sales <- sales %>%
   clean_names() %>%
   mutate(
-    amount  = as.numeric(str_remove_all(amount, "[\\$,]")), # strip out $ and commas
+    amount  = round(as.numeric(str_remove_all(amount, "[\\$,]")),2), # strip out $ and commas
     country = fct_inorder(country), #make country a factor
     product = fct_inorder(product) # make product a factor
   )
