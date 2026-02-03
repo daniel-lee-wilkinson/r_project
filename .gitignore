@@ -1,0 +1,24 @@
+# Rstudio
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+#renv
+.renv/library/
+.renv/staging/
+
+# Secrets
+.Renviron
+.env
+
+# Outputs that can be regenerated
+output/
+figures/
+results/
+
+
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
